@@ -34,6 +34,28 @@ Before installing osTicket, ensure you have the following components installed a
 
 - Follow these steps to install osTicket:
 
+- <h2>Step 1: Install IIS and Required Components</h2>
+- Open Server Manager → Select Add roles and features.
+- Choose Role-based or feature-based installation.
+- Under Server Roles, select Web Server (IIS) and CGI.
+- Click Next and install the required features.
+
+- Download and install PHP 7.4+ from the official website.
+- Enable required extensions such as:
+    * php_imap.dll
+    * php_mysql.dll
+    * php_gd2.dll
+    * php_curl.dll
+ - Add the PHP directory to system environment variables.
+
+<h2>Installation Steps</h2>
+
+- Download MySQL Server 5.7+ and install it.
+- Set up a root user and password.
+- Create a database for osTicket:
+- 
+
+
 <p>
 <img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
 </p>

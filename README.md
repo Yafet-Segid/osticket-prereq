@@ -55,7 +55,8 @@ Before installing osTicket, ensure you have the following components installed a
 - Create a database for osTicket:
 
 
-<h2>Step 4: Download and Configure osTicket</h2>
+<h2>Step 4: Download and Configure osTicket</h2
+                                              
 - Download the latest osTicket package from osTicket.com.
 - Extract the files into C:\inetpub\wwwroot\osticket.
 - Rename ost-config-sample.php to ost-config.php.
@@ -64,6 +65,7 @@ Before installing osTicket, ensure you have the following components installed a
 
 
 <h2>Step 5: Configure IIS for osTicket</h2>
+
 -  Open IIS Manager.
 -  Add a new site pointing to C:\inetpub\wwwroot\osticket.
 - Set the application pool to No Managed Code and enable FastCGI.
@@ -71,12 +73,14 @@ Before installing osTicket, ensure you have the following components installed a
 
 
 <h2>Step 6: Install osTicket via Web Installer</h2>
+
 - Open a browser and navigate to http://localhost/osticket/setup.
 - Follow the installation wizard and enter database credentials.
 - Complete the installation and remove setup directory for security.
 
 
 <h2>Step 7: Configure Email Settings</h2>
+
 - Go to Admin Panel → Emails → Settings.
 - Configure SMTP and IMAP settings for ticket automation.
 

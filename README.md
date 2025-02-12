@@ -22,23 +22,23 @@ This tutorial outlines the prerequisites and installation of the open-source hel
 <h2>List of Prerequisites</h2>
 Before installing osTicket, ensure you have the following components installed and configured:
 
-- Windows Server 2019 or Windows 10 (for testing)
-- Internet Information Services (IIS) with CGI enabled
-- PHP 7.4 or later (Ensure necessary extensions are enabled)
-- MySQL Server 5.7 or later (For database management)
-- osTicket Download Package (Latest version from the official site)
-- SMTP/IMAP Email Settings (For ticket automation and notifications)
-- Microsoft Web Platform Installer (Optional: for ease of installation)
+1, Windows Server 2019 or Windows 10 (for testing)
+2, Internet Information Services (IIS) with CGI enabled
+3, PHP 7.4 or later (Ensure necessary extensions are enabled)
+4, MySQL Server 5.7 or later (For database management)
+5, osTicket Download Package (Latest version from the official site)
+6, SMTP/IMAP Email Settings (For ticket automation and notifications)
+7, Microsoft Web Platform Installer (Optional: for ease of installation)
 
 <h2>Installation Steps</h2>
 
 - Follow these steps to install osTicket:
 
 - <h2>Step 1: Install IIS and Required Components</h2>
-- Open Server Manager → Select Add roles and features.
-- Choose Role-based or feature-based installation.
-- Under Server Roles, select Web Server (IIS) and CGI.
-- Click Next and install the required features.
+1, Open Server Manager → Select Add roles and features.
+2, Choose Role-based or feature-based installation.
+3, Under Server Roles, select Web Server (IIS) and CGI.
+4, Click Next and install the required features.
 
 - Download and install PHP 7.4+ from the official website.
 - Enable required extensions such as:
@@ -48,12 +48,39 @@ Before installing osTicket, ensure you have the following components installed a
     * php_curl.dll
  - Add the PHP directory to system environment variables.
 
-<h2>Installation Steps</h2>
+<h2>Step 3: Install MySQL</h2>
 
-- Download MySQL Server 5.7+ and install it.
-- Set up a root user and password.
-- Create a database for osTicket:
-- 
+1, Download MySQL Server 5.7+ and install it.
+2, Set up a root user and password.
+3, Create a database for osTicket:
+
+
+<h2>Step 4: Download and Configure osTicket</h2>
+1, Download the latest osTicket package from osTicket.com.
+2, Extract the files into C:\inetpub\wwwroot\osticket.
+3, Rename ost-config-sample.php to ost-config.php.
+
+
+
+
+<h2>Step 5: Configure IIS for osTicket</h2>
+1, Open IIS Manager.
+2, Add a new site pointing to C:\inetpub\wwwroot\osticket.
+-3,Set the application pool to No Managed Code and enable FastCGI.
+
+
+
+<h2>Step 6: Install osTicket via Web Installer</h2>
+1, Open a browser and navigate to http://localhost/osticket/setup.
+2, Follow the installation wizard and enter database credentials.
+-3,Complete the installation and remove setup directory for security.
+
+
+<h2>Step 7: Configure Email Settings</h2>
+1, Go to Admin Panel → Emails → Settings.
+2, Configure SMTP and IMAP settings for ticket automation.
+
+
 
 
 <p>

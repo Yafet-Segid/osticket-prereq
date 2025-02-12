@@ -50,15 +50,15 @@ Before installing osTicket, ensure you have the following components installed a
 
 <h2>Step 3: Install MySQL</h2>
 
--  Download MySQL Server 5.7+ and install it.
--  Set up a root user and password.
--  Create a database for osTicket:
+- Download MySQL Server 5.7+ and install it.
+- Set up a root user and password.
+- Create a database for osTicket:
 
 
 <h2>Step 4: Download and Configure osTicket</h2>
--  Download the latest osTicket package from osTicket.com.
--  Extract the files into C:\inetpub\wwwroot\osticket.
--  Rename ost-config-sample.php to ost-config.php.
+- Download the latest osTicket package from osTicket.com.
+- Extract the files into C:\inetpub\wwwroot\osticket.
+- Rename ost-config-sample.php to ost-config.php.
 
 
 
